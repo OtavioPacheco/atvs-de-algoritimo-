@@ -1,0 +1,109 @@
+#Exercicio 1
+nome = input("digite seu nome:")
+salario = float(input("digite seu salario:"))
+print(f"seu nome é: {nome}, e seu salrio é de {salario}")
+
+
+#exercicio 2 
+
+nota1 = float(input("digite sua nota:"))
+nota2 = float(input("digite sa outra nota"))
+media = (nota1 + nota2) / 2 
+print(media)
+
+#exercicio 3 
+
+num_real = float(input("digi[te um numero real"))
+dobro = num_real * 2
+terca_parte = num_real/3
+print(f"seu numero foi {num_real},  o dobro é {dobro}, e sua terça parte é {terca_parte}")
+
+#exercicio 4 
+
+a = 2.5 * 5
+print(a)
+
+#exercicio 5
+
+lado = float(input("digite a medida do lado de um quadrado"))
+area = lado * lado
+print(f"a area do quadrado é {area}")
+
+#exercicio 6 
+
+area_triangulo = (5 * 10)/2
+
+#exercicio 7
+
+area_circulo = 3.14 * 10**2
+
+#exercicio 8
+
+altura_parede = float(input("digite a altura da parede"))
+largura_parede = float(input("digite a largura da parede: "))
+
+area_parede = largura_parede * altura_parede
+litro_tinta = area_parede / 2
+print(f"a area da parede é {area_parede} e o total de litros de tinta deve ser {litro_tinta}")
+
+#exercicio 9 
+
+imc = 100/(1.80 **2)
+print(imc)
+
+#execicio 10 
+
+a = int(input("digite um numero "))
+b = int(input("digite outro numero"))
+
+if a % b == 0:
+    print("é multiplo ")
+else:
+    print ("não é multiplo")
+
+#exercicio 11
+
+valor_produto = float(input("digite o valor do produto: "))
+desconto = valor_produto / 10
+valor_final = valor_produto - desconto
+print(f"o valor final é: {valor_final}")
+
+#exercicio 12 
+
+salario = float(input("digite seu salario atual:"))
+aumento_salario = salario + (salario * 0.15)
+print(aumento_salario)
+
+#exercicio 13
+
+velocidade = int(input("digite a sua velocidade media: "))
+distancia = float(input("digite a distacia a ser percorrida: "))
+tempo_viagem = velocidade/distancia
+print(tempo_viagem)
+
+#exercicio 14
+
+kwh = float(input("digite a qtd de kwh a ser consumida"))
+valor_kwh = float(input("digite o valor do kwh: "))
+qtd_pagar = kwh / valor_kwh
+print(qtd_pagar)
+
+#exercicio 15 
+
+valor_reais = float(input("digite o valor em reais: "))
+valor_dolar = valor_reais * 5
+print(valor_dolar)
+
+#execicio 16
+
+dias_trabalhados = int(input("digite o numero de dias que voce trabalhou no mes: "))
+calculo_salario = (dias_trabalhados * 8) * 25
+
+#exercicio 17 
+
+aluguel_dias = int(input("digite o numero de dias que voce manteve o carro: "))
+aluguel_km = float(input("digite a qtde de kms que voce andou com o carro: "))
+km_valor = aluguel_km * 0.20
+dia_valor = aluguel_dias * 90
+
+#exercicio 18
