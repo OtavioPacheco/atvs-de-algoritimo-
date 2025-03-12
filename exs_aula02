@@ -1,0 +1,149 @@
+
+#Exercicio 01
+num1 = int(input("digite um num:"))
+num2 = int(input("digite outro numero:"))
+
+if num1 > num2:
+    print("o primeiro numero é maior")
+elif num2 == num1:
+    print("os dois numeros são equivalentes")
+else:
+    print("o segundo numero é maior")
+
+
+#exercicio 02
+
+idade = int(input("digite sua idade: "))
+if idade < 18:
+    print("voce é menor de idade")
+elif 18 <= idade <= 68:
+    print("voce é um adulto")
+else:
+    print("voce ja é um idoso")
+
+#execicio 03
+
+idade = int(input("digite sua idade: "))
+
+if idade <= 12:
+    print("voce é uma criança/pré-adolecente")
+elif idade < 18:
+    print("voce é adolecente")
+elif 18 <= idade <= 64:
+    print("voce é um adulto")
+else:
+    print("voce ja é um idoso")
+
+#exercicio 4
+
+opcao = input("digite a operacao: add, sub, mult, div")
+num1 = int(input("digite um numero"))
+num2 = int(input("digite outro numero"))
+
+if opcao == "add":
+    print(num1 + num2)
+
+elif opcao == "sub":
+    print(num1 - num2)
+
+elif opcao == "mult":
+    print(num1 * num2)
+
+elif opcao == "div":
+    print(num1/num2)
+
+else:
+    print("opcao nao encontrada")
+
+#exercicio 5
+
+num1 = int(input("digite um numero"))
+if num1 % 2 == 0:
+    print("é par")
+else:
+    print("é impar")
+
+#exercicio 6
+
+nome = input("digite seu nome:")
+senha = input("digite uma nova senha:")
+print("Credenciais salvas")
+
+login_nome = input("digite seu nome de usuario")
+login_senha = input("digite sua senha ")
+if login_senha == senha and login_nome == nome:
+    print("credenciais corretas")
+else:
+    print("credenciais incorretas")
+
+#exercicio 7
+
+nota = int(input("digite sua nota: "))
+
+if nota < 60:
+    print("F")
+elif 60 <= nota == 69:
+    print("D")
+elif 70 <= nota == 79:
+    print("C")
+elif 80 <= nota == 89:
+    print("B")
+elif 90 <= nota == 100:
+    print("A+")
+else:
+    print("a nota que voce colocou nao corresponde ao sistema")
+
+#exercicio 8
+
+altura = float(input("digite sua altura"))
+peso = float(input("digite seu peso"))
+imc = altura ** 2 / peso
+
+if imc < 18.5:
+    print("voce esta abaixo do peso")
+elif 18.5 <= imc == 24.9:
+    print("voce esta no peso ideal")
+elif 25 <= imc == 29.9:
+    print("voce esta com sobrepeso")
+else:
+    print("voce esta com obesidade")
+
+#exercicio 9
+
+valor = float(input("digite um valor"))
+desconto = valor * 0.1 - valor
+
+if valor > 100:
+    print(f"seu produto recebeu um desconto de 10%, o valor é {desconto}")
+else:
+    print(f"o valor ficou como {valor}")
+
+#exercicio 10
+
+saldo = float(input("digite o seu saldo:"))
+opcao = input("digite se voce quer fazer um: saque ou deposito")
+
+if opcao == "saque":
+    saque = float(input("digite o valor do saque"))
+    if saque > saldo:
+        print("saldo insuficiente")
+    else:
+        saldo = saldo - saque
+        print(f"saque realizado, saldo esta em {saldo}")
+elif opcao == "saldo":
+    deposito = float(input("digite o valor de deposito"))
+    saldo = saldo + deposito
+    print(f"saldo realizado com sucesso, saldo atual: {saldo}")
+
+#execicio 11
+
+idade = int(input("digite sua idade:"))
+categoria = input("digite sua categoria")
+
+if idade <= 20:
+    print(f"sua classificação no time é juvenil e sua categoria é {categoria}")
+elif 21 <= idade >= 30:
+    print(f"sua classificação é adulto e sua categoria é {categoria}")
+
+else:
+    print(f"voce é um senior no seu time e sua categoria é {categoria}")
