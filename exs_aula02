@@ -16,7 +16,7 @@ else:
 idade = int(input("digite sua idade: "))
 if idade < 18:
     print("voce é menor de idade")
-elif 18 <= idade <= 68:
+elif 18 == idade <= 68:
     print("voce é um adulto")
 else:
     print("voce ja é um idoso")
@@ -27,9 +27,9 @@ idade = int(input("digite sua idade: "))
 
 if idade <= 12:
     print("voce é uma criança/pré-adolecente")
-elif idade < 18:
+elif idade <= 17:
     print("voce é adolecente")
-elif 18 <= idade <= 64:
+elif 18 == idade <= 64:
     print("voce é um adulto")
 else:
     print("voce ja é um idoso")
@@ -119,21 +119,27 @@ else:
     print(f"o valor ficou como {valor}")
 
 #exercicio 10
-
 saldo = float(input("digite o seu saldo:"))
-opcao = input("digite se voce quer fazer um: saque ou deposito")
+opcao = input("digite se voce quer fazer um: saque, deposito e sair")
+while true:
+    if opcao == "saque":
+        saque = float(input("digite o valor do saque"))
+        if saque > saldo:
+            print("saldo insuficiente")
+        else:
+            saldo = saldo - saque
+            print(f"saque realizado, saldo esta em {saldo}")
+    elif opcao == "saldo":
+        deposito = float(input("digite o valor de deposito"))
+        saldo = saldo + deposito
+        print(f"saldo realizado com sucesso, saldo atual: {saldo}")
 
-if opcao == "saque":
-    saque = float(input("digite o valor do saque"))
-    if saque > saldo:
-        print("saldo insuficiente")
+    elif opcao == "sair":
+        print("saindo do sistema")
+        break
+
     else:
-        saldo = saldo - saque
-        print(f"saque realizado, saldo esta em {saldo}")
-elif opcao == "saldo":
-    deposito = float(input("digite o valor de deposito"))
-    saldo = saldo + deposito
-    print(f"saldo realizado com sucesso, saldo atual: {saldo}")
+        print("digite uma opcao valida")
 
 #execicio 11
 
